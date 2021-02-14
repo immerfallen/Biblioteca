@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VS Code Projects\\net-core-projects\\Biblioteca\\netcore3.1\\Biblioteca\\Biblioteca.csproj": {}
+    "D:\\SENAC-CursoTecnico\\Módulo 2\\02 - Documentar e realizar manutenção de sites\\trabalho\\Modificado\\Biblioteca\\Biblioteca.csproj": {}
   },
   "projects": {
-    "D:\\VS Code Projects\\net-core-projects\\Biblioteca\\netcore3.1\\Biblioteca\\Biblioteca.csproj": {
+    "D:\\SENAC-CursoTecnico\\Módulo 2\\02 - Documentar e realizar manutenção de sites\\trabalho\\Modificado\\Biblioteca\\Biblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VS Code Projects\\net-core-projects\\Biblioteca\\netcore3.1\\Biblioteca\\Biblioteca.csproj",
+        "projectUniqueName": "D:\\SENAC-CursoTecnico\\Módulo 2\\02 - Documentar e realizar manutenção de sites\\trabalho\\Modificado\\Biblioteca\\Biblioteca.csproj",
         "projectName": "Biblioteca",
-        "projectPath": "D:\\VS Code Projects\\net-core-projects\\Biblioteca\\netcore3.1\\Biblioteca\\Biblioteca.csproj",
-        "packagesPath": "C:\\Users\\Lucas Fraga\\.nuget\\packages\\",
-        "outputPath": "D:\\VS Code Projects\\net-core-projects\\Biblioteca\\netcore3.1\\Biblioteca\\obj\\",
+        "projectPath": "D:\\SENAC-CursoTecnico\\Módulo 2\\02 - Documentar e realizar manutenção de sites\\trabalho\\Modificado\\Biblioteca\\Biblioteca.csproj",
+        "packagesPath": "C:\\Users\\maro_\\.nuget\\packages\\",
+        "outputPath": "D:\\SENAC-CursoTecnico\\Módulo 2\\02 - Documentar e realizar manutenção de sites\\trabalho\\Modificado\\Biblioteca\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Lucas Fraga\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\maro_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -38,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
@@ -45,7 +46,7 @@
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.2.4, )"
             }
           },
           "imports": [
@@ -66,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
