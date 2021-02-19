@@ -34,17 +34,28 @@
                             </tr>
                         </thead>
                         <tbody>
+                           
                             @foreach(Emprestimo e in Model)
                             {
+                                
                             <tr>
                                 <td>@e.Id</td>
                                 <td>@e.NomeUsuario</td>
                                 <td>@e.DataEmprestimo.ToString("dd/MM/yyyy")</td>
-                                <td>@e.DataDevolucao.ToString("dd/MM/yyyy")</td>
+                                @if (e.DataDevolucao >= DateTime.Now)
+                                {
+                                    <td class="text-success">@e.DataDevolucao.ToString("dd/MM/yyyy")</td>
+                                }
+                                else
+                                {
+                                    <td class=" text-danger">@e.DataDevolucao.ToString("dd/MM/yyyy")</td>
+                                }
+
                                 <td>@e.Livro.Titulo</td>
                                 <td>@e.Livro.Autor</td>
                                 <td><a href="/Emprestimo/Edicao/@e.Id">Editar</a></td>
                             </tr>
+                                
                             }
                         </tbody>
                     </table>

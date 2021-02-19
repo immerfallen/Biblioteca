@@ -9,14 +9,18 @@ namespace Biblioteca.Controllers
     
     public class EmprestimoController : Controller
     {
-        public IActionResult Cadastro()
+        public IActionResult Cadastro(int id)
         {
             Autenticacao.CheckLogin(this);
             LivroService livroService = new LivroService();
             EmprestimoService emprestimoService = new EmprestimoService();
+            
 
             CadEmprestimoViewModel cadModel = new CadEmprestimoViewModel();
             cadModel.Livros = livroService.ListarTodos();
+            
+
+
             return View(cadModel);
         }
 

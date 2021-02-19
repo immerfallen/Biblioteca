@@ -32,7 +32,9 @@
                 <select asp-for="Emprestimo.LivroId" class="form-control" required>
                     @foreach(Livro l in Model.Livros)
                     {
+                       
                         <option value="@l.Id">@l.Titulo</option>
+                        
                     }
                 </select>
             </div>
