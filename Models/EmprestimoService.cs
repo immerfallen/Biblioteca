@@ -41,11 +41,11 @@ namespace Biblioteca.Models
                     //definindo dinamicamente a filtragem
                     switch(filtro.TipoFiltro)
                     {
-                        case "Usuario":
+                        case "NomeUsuario":
                             query = bc.Emprestimos.Where(em => em.NomeUsuario.Contains(filtro.Filtro));
                         break;
 
-                        case "Titulo":
+                        case "Livro.Titulo":
                             query = bc.Emprestimos.Where(em => em.Livro.Titulo.Contains(filtro.Filtro));
                         break;
 
@@ -59,7 +59,7 @@ namespace Biblioteca.Models
                     // caso filtro não tenha sido informado
                     query = bc.Emprestimos;
                 }
-                
+                bc.Emprestimos.Include(e => e.Livro).ToList();
                 return query.OrderBy(em => em.NomeUsuario).ToList();
             }
         }
