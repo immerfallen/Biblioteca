@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SENAC-CursoTecnico\\Módulo 2\\02 - Documentar e realizar manutenção de sites\\trabalho\\Modificado\\Biblioteca\\Biblioteca.csproj": {}
+    "D:\\SENAC-CursoTecnico\\Módulo 2\\02 - Documentar e realizar manutenção de sites\\trabalho\\Modificado\\Biblioteca.csproj": {}
   },
   "projects": {
-    "D:\\SENAC-CursoTecnico\\Módulo 2\\02 - Documentar e realizar manutenção de sites\\trabalho\\Modificado\\Biblioteca\\Biblioteca.csproj": {
+    "D:\\SENAC-CursoTecnico\\Módulo 2\\02 - Documentar e realizar manutenção de sites\\trabalho\\Modificado\\Biblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SENAC-CursoTecnico\\Módulo 2\\02 - Documentar e realizar manutenção de sites\\trabalho\\Modificado\\Biblioteca\\Biblioteca.csproj",
+        "projectUniqueName": "D:\\SENAC-CursoTecnico\\Módulo 2\\02 - Documentar e realizar manutenção de sites\\trabalho\\Modificado\\Biblioteca.csproj",
         "projectName": "Biblioteca",
-        "projectPath": "D:\\SENAC-CursoTecnico\\Módulo 2\\02 - Documentar e realizar manutenção de sites\\trabalho\\Modificado\\Biblioteca\\Biblioteca.csproj",
+        "projectPath": "D:\\SENAC-CursoTecnico\\Módulo 2\\02 - Documentar e realizar manutenção de sites\\trabalho\\Modificado\\Biblioteca.csproj",
         "packagesPath": "C:\\Users\\maro_\\.nuget\\packages\\",
-        "outputPath": "D:\\SENAC-CursoTecnico\\Módulo 2\\02 - Documentar e realizar manutenção de sites\\trabalho\\Modificado\\Biblioteca\\obj\\",
+        "outputPath": "D:\\SENAC-CursoTecnico\\Módulo 2\\02 - Documentar e realizar manutenção de sites\\trabalho\\Modificado\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maro_\\AppData\\Roaming\\NuGet\\NuGet.Config",

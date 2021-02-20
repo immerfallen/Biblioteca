@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "52egtn64Y6iIb2l2D7QZM/py/w5nzlXC09qUuo1SKDchjsFyzobcbGW8RbTImvG4Hi9EbB7fH1kM9rF+4/1zDQ==",
+  "dgSpecHash": "bdsWNqTX/t43pmbbNaT8ejZf1v8Io0z7ZmPX2OQ/k/VNnmGWGCSsJYudgPRbbEEQmVMDT85co82c7AnUMGojCQ==",
   "success": true,
-  "projectFilePath": "D:\\SENAC-CursoTecnico\\Módulo 2\\02 - Documentar e realizar manutenção de sites\\trabalho\\Modificado\\Biblioteca\\Biblioteca.csproj",
+  "projectFilePath": "D:\\SENAC-CursoTecnico\\Módulo 2\\02 - Documentar e realizar manutenção de sites\\trabalho\\Modificado\\Biblioteca.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\maro_\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\maro_\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
