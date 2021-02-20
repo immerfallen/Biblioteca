@@ -39,5 +39,27 @@ namespace Biblioteca.Controllers
                 }
             }
         }
+            public static void verificaSeUsuarioAdminExiste(BibliotecaContext bc)
+        {
+            IQueryable<Usuario> userEncontrado = bc.usuarios.Where(u => u.login = "admin");
+
+            if (userEncontrado.ToList().Count() == 0)
+            {
+                Usuario admin = new Usuario();
+                admin.login = "admin";
+                admin.senha = Criptografo.TextoCriptografado("123");
+                admin.tipo = Usuario.ADMIN;
+                admin.Nome = "Administrador";
+
+                bc.usuarios.Add(admin);
+                bc.SaveChanges();
+            }
+        }
+        
+        public static void verificaSeUsuarioEAdmin(Controller controller)
+        {
+            if (!(controller.HttpContext.Session.GetInt32("tipo") == Usuario.ADMIN)) ;
+            controller.Request.HttpContext.Response.Redirect("/Usuarios/NeedAdmin");
+        }
     }
 }
