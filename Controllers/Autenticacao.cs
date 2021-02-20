@@ -41,7 +41,7 @@ namespace Biblioteca.Controllers
         }
             public static void verificaSeUsuarioAdminExiste(BibliotecaContext bc)
         {
-            IQueryable<Usuario> userEncontrado = bc.usuarios.Where(u => u.login = "admin");
+            IQueryable<Usuario> userEncontrado = bc.usuarios.Where(u => u.login == "admin");
 
             if (userEncontrado.ToList().Count() == 0)
             {
@@ -58,7 +58,7 @@ namespace Biblioteca.Controllers
         
         public static void verificaSeUsuarioEAdmin(Controller controller)
         {
-            if (!(controller.HttpContext.Session.GetInt32("tipo") == Usuario.ADMIN)) ;
+            if (!(controller.HttpContext.Session.GetInt32("tipo") == Usuario.ADMIN));
             controller.Request.HttpContext.Response.Redirect("/Usuarios/NeedAdmin");
         }
     }
