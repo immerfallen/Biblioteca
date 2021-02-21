@@ -34,7 +34,7 @@ namespace Biblioteca.Controllers
                 {
                     controller.HttpContext.Session.SetString("login", ListaUsuarioEncontrado[0].login);
                     controller.HttpContext.Session.SetString("NomeUsuario", ListaUsuarioEncontrado[0].NomeUsuario);
-                    controller.HttpContext.Session.SetInt32("Tipo", ListaUsuarioEncontrado[0].tipo);
+                    controller.HttpContext.Session.SetInt32("tipo", ListaUsuarioEncontrado[0].tipo);
                     return true;
                 }
             }
@@ -56,12 +56,12 @@ namespace Biblioteca.Controllers
             }
         } 
         
-         /*public static void verificaSeUsuarioEAdmin(Controller controller)
+         public static void verificaSeUsuarioEAdmin(Controller controller)
         {
             if (!(controller.HttpContext.Session.GetInt32("tipo") == Usuario.ADMIN))             
             controller.Request.HttpContext.Response.Redirect("/Usuarios/NeedAdmin");
             }
-         */
+         
            
     }
 }

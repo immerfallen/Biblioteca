@@ -12,7 +12,7 @@ namespace Biblioteca.Controllers
         public IActionResult ListaDeUsuarios()
         {
             Autenticacao.CheckLogin(this);
-        //    Autenticacao.verificaSeUsuarioEAdmin(this);
+            Autenticacao.verificaSeUsuarioEAdmin(this);
 
             return View(new UsuarioService().Listar());
         }
@@ -37,14 +37,14 @@ namespace Biblioteca.Controllers
         public IActionResult RegistrarUsuarios()
         {
             Autenticacao.CheckLogin(this);
-        //    Autenticacao.verificaSeUsuarioEAdmin(this);
+            Autenticacao.verificaSeUsuarioEAdmin(this);
             return View();
         }
         [HttpPost]
         public IActionResult RegistrarUsuarios(Usuario novoUser)
         {
             Autenticacao.CheckLogin(this);
-       //     Autenticacao.verificaSeUsuarioEAdmin(this);
+            Autenticacao.verificaSeUsuarioEAdmin(this);
 
             novoUser.senha = Criptografo.TextoCriptografado(novoUser.senha);
 
