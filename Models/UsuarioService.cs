@@ -38,10 +38,19 @@ namespace Biblioteca.Models
 
                 Usuario u = bc.usuarios.Find(userEditado.Id);
                 u.login = userEditado.login; 
-                u.Nome = userEditado.Nome;
+                u.NomeUsuario = userEditado.NomeUsuario;
                 u.senha = userEditado.senha;
                 u.tipo = userEditado.tipo;
 
+                bc.SaveChanges();
+            }
+        }
+
+        public void excluirUsuario(int id)
+        {
+            using(BibliotecaContext bc = new BibliotecaContext())
+            {
+                bc.usuarios.Remove(bc.usuarios.Find(id));
                 bc.SaveChanges();
             }
         }

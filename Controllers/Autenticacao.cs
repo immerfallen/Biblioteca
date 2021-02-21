@@ -33,13 +33,13 @@ namespace Biblioteca.Controllers
                 else
                 {
                     controller.HttpContext.Session.SetString("login", ListaUsuarioEncontrado[0].login);
-                    controller.HttpContext.Session.SetString("Nome", ListaUsuarioEncontrado[0].login);
-                    controller.HttpContext.Session.SetString("Tipo", ListaUsuarioEncontrado[0].login);
+                    controller.HttpContext.Session.SetString("NomeUsuario", ListaUsuarioEncontrado[0].NomeUsuario);
+                    controller.HttpContext.Session.SetInt32("Tipo", ListaUsuarioEncontrado[0].tipo);
                     return true;
                 }
             }
         }
-            public static void verificaSeUsuarioAdminExiste(BibliotecaContext bc)
+           public static void verificaSeUsuarioAdminExiste(BibliotecaContext bc)
         {
             IQueryable<Usuario> userEncontrado = bc.usuarios.Where(u => u.login == "admin");
 
@@ -49,17 +49,19 @@ namespace Biblioteca.Controllers
                 admin.login = "admin";
                 admin.senha = Criptografo.TextoCriptografado("123");
                 admin.tipo = Usuario.ADMIN;
-                admin.Nome = "Administrador";
+                admin.NomeUsuario = "Administrador";
 
                 bc.usuarios.Add(admin);
                 bc.SaveChanges();
             }
-        }
+        } 
         
-        public static void verificaSeUsuarioEAdmin(Controller controller)
+         /*public static void verificaSeUsuarioEAdmin(Controller controller)
         {
-            if (!(controller.HttpContext.Session.GetInt32("tipo") == Usuario.ADMIN));
+            if (!(controller.HttpContext.Session.GetInt32("tipo") == Usuario.ADMIN))             
             controller.Request.HttpContext.Response.Redirect("/Usuarios/NeedAdmin");
-        }
+            }
+         */
+           
     }
 }

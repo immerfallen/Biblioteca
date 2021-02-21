@@ -11,7 +11,7 @@ namespace Biblioteca.Models
         public static int PADRAO = 1;
 
         public int Id { get; set; }
-        public string Nome { get; set; }
+        public string NomeUsuario { get; set; }
         public string login { get; set; }
         public string senha { get; set; }
         public int tipo { get; set; }

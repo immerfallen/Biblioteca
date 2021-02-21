@@ -12,7 +12,7 @@ namespace Biblioteca.Controllers
         public IActionResult ListaDeUsuarios()
         {
             Autenticacao.CheckLogin(this);
-            Autenticacao.verificaSeUsuarioEAdmin(this);
+        //    Autenticacao.verificaSeUsuarioEAdmin(this);
 
             return View(new UsuarioService().Listar());
         }
@@ -33,10 +33,18 @@ namespace Biblioteca.Controllers
 
         }
 
+
+        public IActionResult RegistrarUsuarios()
+        {
+            Autenticacao.CheckLogin(this);
+        //    Autenticacao.verificaSeUsuarioEAdmin(this);
+            return View();
+        }
+        [HttpPost]
         public IActionResult RegistrarUsuarios(Usuario novoUser)
         {
             Autenticacao.CheckLogin(this);
-            Autenticacao.verificaSeUsuarioEAdmin(this);
+       //     Autenticacao.verificaSeUsuarioEAdmin(this);
 
             novoUser.senha = Criptografo.TextoCriptografado(novoUser.senha);
 
@@ -59,7 +67,7 @@ namespace Biblioteca.Controllers
 
             if (decisao == "EXCLUIR")
             {
-                ViewData["Mensagem"] = "Exclusão de Usuário " + new UsuarioService().Listar(id).Nome + " realizada com sucesso!";
+                ViewData["Mensagem"] = "Exclusão de Usuário " + new UsuarioService().Listar(id).NomeUsuario + " realizada com sucesso!";
                 new UsuarioService().excluirUsuario(id);
                 return View("ListaDeUsuarios", new UsuarioService().Listar());
                     
@@ -76,7 +84,7 @@ namespace Biblioteca.Controllers
         public IActionResult cadastroRealizado()
         {
             Autenticacao.CheckLogin(this);
-            Autenticacao.verificaSeUsuarioEAdmin(this);
+    //        Autenticacao.verificaSeUsuarioEAdmin(this);
             return View();
         }
 
